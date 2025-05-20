@@ -6,7 +6,7 @@ class Enemigo(Personaje):
         super().__init__(nombre, fuerza, inteligencia, fe, defensa, vida)
         self.espada = espada
 
-    def cambiar_arma(self, opcion):
+    def cambiar_arma(self):
         opcion = int(input("Dificultad\n1\n2\n"))
         if opcion == 1:
             self.espada = 8

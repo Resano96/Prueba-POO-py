@@ -34,6 +34,9 @@ class Personaje:
     def esta_vivo(self):
         return self.__vida > 0
 
+    def esta_muerto(self):
+        return self.__vida < 0
+
     def __morir(self):
         self.__vida = 0
         print((self.__nombre), "ha muerto")
@@ -52,8 +55,8 @@ class Personaje:
         else:
             enemigo.__morir()
 
-    def pocion_vida(self, vida):
-        print("Has usado una pocion de ",  vida , "de vida")
+    def restaurar_vida(self, vida):
+        print("Te has curado ",  vida , "de vida")
         self.__vida = self.__vida + vida
 
 #-------------------------------------------------------------------------------------------------------

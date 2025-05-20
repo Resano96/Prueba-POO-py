@@ -1,18 +1,3 @@
-#crear la clase con sus atributos
-
-#metodo constructor __init__
-
-
-
-#-----------------------------------------------------------------------------------------------------------------------
-
-#-----------------------------------------------------------------------------------------------------------------
-
-#--------------------------------------------------------------------------------------------------------------------
-
-#POLIMORFISMO, VARIAS CLASES USAN EL MISMO METODO
-
-
 
 #----------------------------------------------------------------------------------------------------------------------
 def combate(jugador1, jugador2):
@@ -32,11 +17,7 @@ def combate(jugador1, jugador2):
     else:
         print("\nEmpate")
 
-#sacar valores de una clase
 
-#print("El nombre del jugador es", personaje1.nombre)
-#print("La fuerza del jugador es", personaje1.fuerza)
-
-
-
-
+def golpear (jugador1, jugador2):
+    if jugador2.esta_vivo():
+        jugador1.atacar(jugador2)
